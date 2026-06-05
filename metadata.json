@@ -1,0 +1,6 @@
+{
+  "name": "E-commerce de Cursos Online - Checkout WhatsApp",
+  "description": "Plataforma premium e interativa para venda de cursos online com carrinho de compras e checkout direto para o WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

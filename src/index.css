@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-bg: #09090b;
+  --color-brand-card: #18181b;
+  --color-brand-accent: #22c55e;
+  --color-brand-cta: #f43f5e;
+  --color-brand-text: #fafafa;
+  --color-brand-text-dim: #a1a1aa;
+  --color-brand-border: #27272a;
+}
+
+@layer base {
+  :root {
+    --bg: #09090b;
+    --card: #18181b;
+    --accent: #22c55e;
+    --cta: #f43f5e;
+    --text: #fafafa;
+    --text-dim: #a1a1aa;
+    --border: #27272a;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cta);
+}
